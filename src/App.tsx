@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { ProductCard } from './component/product-card/product-card';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
       </header>
+      <main className='App-main'>
+        <ProductCard 
+          title="Кофемашина"
+          origin="Италия"
+          price={34900} // 349.00 ₽
+          currency="RUB"
+          imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCf6vxvbIdi0clJLYjoFHFjPDCqeYFytNxAH8hrt1TjnxFzsUCURw0-gp4L10M8bHUF40&usqp=CAU"/>
+      </main>
     </div>
   );
 }
